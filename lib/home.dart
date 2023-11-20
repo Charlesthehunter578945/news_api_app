@@ -40,8 +40,10 @@ class _HomeState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 215, 123, 123),
       appBar: AppBar(
         title: const Text("REST API News"),
+        backgroundColor: Colors.brown,
       ),
       body: _isLoading
           ? const Center(
@@ -59,9 +61,34 @@ class _HomeState extends State {
                         (dataFromAPI!.articles[index].urlToImage ?? noImage),
                         width: 100,
                       ),
+                      const Text(
+                        "Title:",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       Text(dataFromAPI!.articles[index].title.toString()),
+                      const Text(
+                        "Description:",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       Text(
                           "${dataFromAPI!.articles[index].description.toString()}"),
+                      const Text(
+                        "Author:",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(dataFromAPI!.articles[index].author.toString()),
+                      const Text(
+                        "Url:",
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text(dataFromAPI!.articles[index].url.toString()),
+                      const Divider(
+                        color: Colors.black,
+                        thickness: 3,
+                        height: 20,
+                        indent: 20,
+                        endIndent: 20,
+                      ),
                     ],
                   ),
                 );
