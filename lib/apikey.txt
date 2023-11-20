@@ -1,0 +1,9 @@
+api key = d3068624f781480ca33c1b046560d49b
+
+og url
+https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d3068624f781480ca33c1b046560d49b
+
+prof
+https://newsapi.org/v2/top-headlines?country=us&category=tecnology&apiKey=
+
+Buscar luego = https://www.geeksforgeeks.org/flutter-building-news-reader-app/
